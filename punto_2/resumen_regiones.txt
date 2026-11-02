@@ -1,0 +1,10 @@
+=========================================
+RESUMEN DE REGIONES
+=========================================
+Numero total de regiones: 4
+
+--- MAYOR AREA (Area: 5) ---
+ID: 3 | Simbolo: C | Area: 5 | Perimetro: 12 | Caja: {2,0} a {4,2}
+
+--- MAYOR PERIMETRO (Perimetro: 12) ---
+ID: 3 | Simbolo: C | Area: 5 | Perimetro: 12 | Caja: {2,0} a {4,2}
