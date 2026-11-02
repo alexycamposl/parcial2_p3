@@ -1,0 +1,3 @@
+Línea 1: PROPUESTA VÁLIDA
+Línea 2: PROPUESTA INVÁLIDA
+  - Conflicto: 'A' y 'C' tienen el mismo color 1.
