@@ -414,6 +414,8 @@ defmodule MapaRegiones do
       texto_final = Enum.join(lineas_resumen, "\n") <> "\n"
 
       IO.puts(texto_final)
+      IO.puts("Revise el archivo regiones.csv para tener una mayor claridad")
+      IO.puts("Abra el archivo mapa_regiones.svg para visualizar el mapa de una mejor forma\n")
       File.write!("resumen_regiones.txt", texto_final)
     end
   end
