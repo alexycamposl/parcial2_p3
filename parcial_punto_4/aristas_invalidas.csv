@@ -1,0 +1,9 @@
+nodo_a,nodo_b
+A,B
+B,C
+C,D
+D,A
+A,C
+X,D
+A,A
+B,A
