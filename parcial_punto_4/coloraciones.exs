@@ -1,8 +1,38 @@
 
-
 defmodule Coloraciones do
+@moduledoc """
+Módulo encargado de generar todas las coloraciones válidas
+de un grafo utilizando búsqueda recursiva y generación perezosa.
 
+El algoritmo asigna colores enteros desde 1 hasta k a cada
+nodo, verificando que dos nodos conectados por una arista
+no tengan el mismo color.
+"""
   # Genera las coloraciones válidas de forma perezosa.
+  @doc """
+Inicia la generación perezosa de coloraciones válidas.
+
+## Parámetros
+
+- nodos: lista de identificadores de los nodos del grafo.
+- aristas: lista de tuplas que representan las conexiones.
+- k: cantidad máxima de colores disponibles.
+
+## Retorno
+
+Devuelve un Stream con las asignaciones de colores válidas.
+
+## Ejemplo
+
+    Coloraciones.generar(
+      ["A", "B", "C"],
+      [{"A", "B"}, {"B", "C"}],
+      2
+    )
+
+Este ejemplo genera las asignaciones posibles utilizando
+dos colores, sin almacenar previamente todas las soluciones.
+"""
   def generar(nodos, aristas, k) do
     buscar(nodos, aristas, k, %{})
   end
